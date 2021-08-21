@@ -15,7 +15,7 @@ h1{
     color: rgb(255, 255, 255);
     font-family: serif;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 26px; 
 }
 
 p{
@@ -27,7 +27,7 @@ p{
 .wrapper{
     margin: 5px;
     padding: 0;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
 
 }
@@ -40,6 +40,11 @@ ul {
 ul li{
     padding: 2px;
     margin: 2px;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -55,10 +60,11 @@ header{
 
 /*Nav Bar*/
 nav{
-    background: rgb(184, 168, 168);
+    background: rgb(7, 7, 7);
     padding:  .5em .5em 0 .5em;
-    width: 400px;
-    height: 100px;
+    width: 450px;
+    height: 200px;
+    
 }
 
 nav ul{
@@ -70,13 +76,15 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 3px;
-    margin: 0;
+    margin: 2px;
 }
 
 nav input{
-    width: 75px;
+    width: 200px;
     height: 20px;
+    margin: 2px;
 }
+
 
 nav#utilityBar{
     float: right;
@@ -84,11 +92,13 @@ nav#utilityBar{
     width: 200px;
 }
 
-nav button.topNavButtons{
-    background-color: grey;
-    color: white;
-    width: 75px;
-    height: 30px;
+
+
+nav ul li.topNavButtons{
+    background-color: white;
+    padding: 0.5em;
+    color: black;
+
 }
 
 
@@ -98,17 +108,29 @@ nav button.topNavButtons{
     float: left;
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
-    padding: 15px;
+    justify-content: center;
+    width: 400px;
+    height: 1400px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     border-radius: 4px;
     box-shadow: 1px 1px 5px white;
+    text-align: center;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
 }
 
 table{
     max-height: 300px;
     max-width: 300px;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(184, 168, 168);
+    box-shadow: 2px white;
 }
 
 table tr th{
@@ -122,22 +144,49 @@ table tr td{
     
 }
 
-.sign-in form ol li{
+.sign-in{
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow:1px 1px 5px black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in h1{
+    color: black;
+}
+
+.sign-in p{
+    color: black;
+}
+
+.sign-in form ul li{
     font-size:18px;
     color: black;
 }
 
-.sign-in form ol li input{
-    width: 300px;
+.sign-in form ul li input{
+    width: 250px;
     height: 35px;
-
+    float: center;
+    margin: 5px;
+}
+ .commentsBox{
+     display: flex;
+     justify-content: center;
 }
 
 .commentsBox input{
-    width: 400px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     border-radius: 2px;
     border: 1px inset white;
+    display: flex;
+    justify-content: center;
+
+
+    
 }
 
 #socialLink{
@@ -149,26 +198,37 @@ table tr td{
     margin: 20px;
 }
 
+
+
 /*section2*/
  #main{
     border: 5px solid white;
     float: right;
     display: flex;
-    padding: 0.5em;
-    
+    padding-left: 60px;
+    width: 1000px;
+    height: 1400px;
+    justify-content: center;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px yellow;
      
  }
 
 #highlightReel{
-    width: 500px;
-    height: 500px;
-    box-shadow: 0.5px 0.5px 2.5px #777;
+    width: 400px;
+    height: 400px;
+    box-shadow: 2px 2px 4px #777;
     margin: 25px;
+    padding: auto;
+    border-radius: 8px;
 
 }
 
 #recentShots{
-    width: 500px;
+    width: 400px;
     height: 300px;
     border-radius: 2px;
     box-shadow: 1px 1px 5px #777;
@@ -186,6 +246,7 @@ footer ul li{
     display: inline-block;
     padding: 0;    
 }
+
 footer ul li::before{
     content: "| ";
     color: white;
