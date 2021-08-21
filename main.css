@@ -62,8 +62,8 @@ header{
 nav{
     background: rgb(7, 7, 7);
     padding:  .5em .5em 0 .5em;
-    width: 400px;
-    height: 100px;
+    width: 450px;
+    height: 200px;
     
 }
 
@@ -76,7 +76,7 @@ nav ul{
 nav li{
     display: inline-block;
     padding: 3px;
-    margin: 0;
+    margin: 2px;
 }
 
 nav input{
@@ -107,10 +107,18 @@ nav ul li.topNavButtons{
     flex-wrap: wrap;
     justify-content: center;
     width: 400px;
-    margin: 5px;
+    height: 1400px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     border-radius: 4px;
     box-shadow: 1px 1px 5px white;
     text-align: center;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
 }
 
 table{
@@ -133,23 +141,48 @@ table tr td{
     
 }
 
-.sign-in form ol li{
+.sign-in{
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow:1px 1px 5px black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in h1{
+    color: black;
+}
+
+.sign-in p{
+    color: black;
+}
+
+.sign-in form ul li{
     font-size:18px;
     color: black;
 }
 
-.sign-in form ol li input{
-    width: 300px;
+.sign-in form ul li input{
+    width: 250px;
     height: 35px;
     float: center;
+    margin: 5px;
+}
+ .commentsBox{
+     display: flex;
+     justify-content: center;
 }
 
 .commentsBox input{
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     border-radius: 2px;
     border: 1px inset white;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+
+
     
 }
 
@@ -162,27 +195,37 @@ table tr td{
     margin: 20px;
 }
 
+
+
 /*section2*/
  #main{
     border: 5px solid white;
     float: right;
     display: flex;
-    padding: 1em;
+    padding-left: 60px;
     width: 1000px;
+    height: 1400px;
     justify-content: center;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px yellow;
      
  }
 
 #highlightReel{
     width: 400px;
     height: 400px;
-    box-shadow: 0.5px 0.5px 2.5px #777;
+    box-shadow: 2px 2px 4px #777;
     margin: 25px;
+    padding: auto;
+    border-radius: 8px;
 
 }
 
 #recentShots{
-    width: 500px;
+    width: 400px;
     height: 300px;
     border-radius: 2px;
     box-shadow: 1px 1px 5px #777;
