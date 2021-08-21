@@ -83,6 +83,15 @@ nav#utilityBar{
     height: 50px;
     width: 200px;
 }
+
+nav button.topNavButtons{
+    background-color: grey;
+    color: white;
+    width: 75px;
+    height: 30px;
+}
+
+
 /*section1*/
 #sideBar{
     border: 5px solid white;
@@ -180,5 +189,4 @@ footer ul li{
 footer ul li::before{
     content: "| ";
     color: white;
-    
 }
