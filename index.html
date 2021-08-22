@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shot by 2 Sisters</title>
+    <!-- Fix resolution scaling -->
     <link rel="stylesheet"  type="text/css" href="./main.css">
 </head>
 <header>
-    <!--Research cursor functions to highlight on hover-->
+    <!--Turn "About Us" into a dropdown menu with hover function-->
     <nav id="utilityBar">
         <ul>
             <li class="topNavButtons"><a href="./login.html">Sign In</a></li>
             <li class="topNavButtons"><a href="./newUser.html">Create Account</a></li>
             <li class="topNavButtons"><a href="./about-us.html">About Us</a></li>
-            <br>
-            <input type="search" placeholder="Search..">
+            <li><input type="search" placeholder="Search.."></li>
         </ul>
     </nav>
 </header>
@@ -30,7 +30,7 @@
                         <ul>
                             <li><input placeholder="Email" type="Email"><!--email--></li> 
                             <li><input placeholder="Password" type="password"><!--password--></li>
-                            <li><button>Sign In</button><!--sign in button--></li>
+                            <li><button id="signInButton">Sign In</button><!--sign in button--></li>
                             <li><p>or <a href="./newUser.html">Create an Account</a></p></li>
                         </ul>
                     </form>
@@ -38,6 +38,7 @@
 
                 <div class="calendar">
                     <div class="month">
+                    <!--Create month slider for upcoming events-->
                     <h1>August 2021</h1>
                         <table>
                             <tr>
@@ -125,12 +126,12 @@
                 <h1>These are some of our most recent shoots!</h1>
                 <br>
                 <div class="recents">
-                    <!--need to add links-->
+                    <!--need to add links to gallery when galley.html is finished-->
                     <a href="#"><img  id="recentShots" src="./Photos/Owen-gallery1.jpg"></a>
                     <a href="#"><img  id="recentShots" src="./Photos/wed1-gallery2.jpg"></a>
                 </div>
             </section>
-       
+        <div id="footerBreak"></div>
         <footer>
             <!--Research cursor functions to highlight on hover-->
             <span>&copy;2021 Shot by 2 Sisters</span>
