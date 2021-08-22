@@ -2,7 +2,7 @@
 body{
     font-size: 65%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
+    background-color: rgb(133, 129, 115);
     padding: 0;
     margin: 0;
     -webkit-background-size: 100% 100%;
@@ -40,6 +40,7 @@ ul {
 ul li{
     padding: 2px;
     margin: 2px;
+    list-style: none;
 }
 
 h2{
@@ -49,6 +50,7 @@ h2{
 a, :active{
     color: black;
 }
+
 
 
 /*header*/
@@ -63,6 +65,12 @@ header{
 }
 
 /*Nav Bar*/
+
+nav a::before :active{
+    content: "-";
+    color: rgb(7, 7, 7);
+} 
+
 nav ul{
     padding: 0;
     margin: 0;
@@ -224,7 +232,12 @@ table tr td{
      
  }
 
-#highlightReel{
+#highlights{
+    display: flex;
+    justify-content: center;
+}
+
+.highlightReel{
     width: 400px;
     height: 400px;
     box-shadow: 2px 2px 4px #777;
@@ -234,19 +247,68 @@ table tr td{
 
 }
 
-#recentShots{
-    width: 400px;
-    height: 300px;
-    border-radius: 2px;
-    box-shadow: 1px 1px 5px #777;
-    margin: 10px;
-
-}
-
-.highlights{
+#recents{
     display: flex;
     justify-content: center;
+    padding: auto;
 }
+
+.slider1{
+    width: 350px;
+    height: 200px;
+    
+    margin: 5px;
+    
+}
+
+.recentsSlider1{
+  width: 500%;
+  height: 100%;
+  
+  margin: 7.5;
+}
+
+.slidePhotos{
+  width: 20%;
+  height: 100%;
+  animation: slider1 2s linear infinite alternate;
+}
+
+.slidePhotos img{
+  width: 100%;
+  height: 100%;
+     
+}
+
+.galleryLink{
+    margin: 7.5px;
+    margin: auto;
+}
+ .galleryLink img{
+    width: 350px;
+    height: 200px;
+    
+ }
+ 
+@keyframes slider1 {
+    
+    0%{
+        transform: translateX();
+    }
+    25%{
+        transform: translateX();
+    }
+    50%{
+        transform: translateX();
+    }
+    75%{
+        transform: translateX();
+    }
+    100%{
+        transform: translateX();
+    }
+}
+
 
 /*footer*/
 #footerBreak{
