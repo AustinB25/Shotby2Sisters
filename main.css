@@ -253,42 +253,47 @@ table tr td{
     padding: auto;
 }
 
-.slider1{
-    width: 350px;
-    height: 200px;
-    
+.slider{
+    width: 450px;
+    height: 300px;
     margin: 5px;
+    overflow: hidden;
+    position: relative;
     
 }
 
-.recentsSlider1{
-  width: 500%;
-  height: 100%;
-  
-  margin: 7.5;
+.recentsSlider{
+  width: 400%;
+  height: 300px;
 }
 
 .slidePhotos{
-  width: 20%;
-  height: 100%;
+  width: 450px;
+  height: 250px;
+  display: inline-flex;
+  margin: 3px;
+  border: 2px solid black;
   animation: slider1 2s linear infinite alternate;
 }
 
-.slidePhotos img{
-  width: 100%;
-  height: 100%;
-     
+.galleryLink{
+    position: relative;
+    width: 450px;
+    height: 250px;
 }
 
-.galleryLink{
-    margin: 7.5px;
-    margin: auto;
+.galleryLinkPic{
+    backface-visibility: hidden;
+    transition: 0.75s ease-in;
+    width: 450px;
+    height: 250px;
 }
- .galleryLink img{
-    width: 350px;
-    height: 200px;
-    
- }
+
+.galleryLinkOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
  
 @keyframes slider1 {
     
