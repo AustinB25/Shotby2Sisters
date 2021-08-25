@@ -7,6 +7,7 @@
     <title>Shot by 2 Sisters</title>
     <!-- Fix resolution scaling -->
     <link rel="stylesheet"  type="text/css" href="./main.css">
+    
 </head>
 <header>
     <!--Turn "About Us" into a dropdown menu with hover function-->
@@ -116,22 +117,22 @@
                 <h1>Here are some of our favorite Shots!</h1>
 
                 <br>
-                <!--Need to fix spacing-->
-                    <div id="hightlights"> 
-                        <img class="highlightReel" src="./Photos/B&R-highlight1.jpg">
-                        <img class="highlightReel" src="./Photos/A&P-highlight2.jpg">
-                        <img class="highlightReel" src="./Photos/O&D-hightlight3.jpg">
-                        <img class="highlightReel" src="./Photos/Addy-hightlight4.jpg">
-                    </div>
+                <div class="highlights"> 
+                        <img  src="./Photos/a&p2.jpg">
+                        <img  src="./Photos/rb8.jpg">
+                        <img  src="./Photos/barbHands.jpg">
+                        <img  src="./Photos/Owen-gallery1.jpg">
+                </div>
                 
                 <br>
 
                 <h1>These are some of our most recent shoots!</h1>
+
                 <br>
-                <div id="recents">
-                    <!--nneed to turn left pic to 4 img slider-->
-                    <div class="slider">
-                        <div class="recentsSlider">
+
+                <div class="recents">
+                    <!--Need to fix positioning -->
+                    <div class="slider">                        
                             <div class="slidePhotos">
                                 <img src="./Photos/rb1.jpg">
                             </div>
@@ -143,12 +144,10 @@
                             </div>
                             <div class="slidePhotos">
                                 <img src="./Photos/rb7.jpg">
-                            </div>
-                        </div>
+                            </div>                        
                     </div>
-                    <!--Make gallery hover link to gallery.html-->
                     <div class=galleryLink >
-                        <img class="galleryLinkPic" src="./Photos/Owen-gallery1.jpg">
+                        <img class="galleryLinkPic" src="./Photos/A&P-highlight2.jpg">
                         <div class="galleryLinkOverlay">
                             <div class="galleryLinkText">
                                 <h3>Gallery</h3>
@@ -157,9 +156,29 @@
                     </div>
                 </div>
             </section>
+   
         <div id="footerBreak"></div>
+        <script>
+            var slideIndex = 0;
+            slider();
+            
+            function slider() {
+              var i;
+              var slides = document.getElementsByClassName("slidePhotos");
+            
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+            
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}
+              
+              slides[slideIndex-1].style.display = "block";  
+              
+              setTimeout(slider, 4500);
+            }
+        </script>
         <footer>
-            <!--Research cursor functions to highlight on hover-->
             <span>&copy;2021 Shot by 2 Sisters</span>
                 <ul id="footMenu">
                     <li><a href="#">Terms of Use</a></li>

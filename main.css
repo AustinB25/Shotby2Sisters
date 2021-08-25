@@ -5,10 +5,6 @@ body{
     background-color: rgb(133, 129, 115);
     padding: 0;
     margin: 0;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
 }
 
 h1{
@@ -25,10 +21,10 @@ p{
 }
 
 .wrapper{
-    margin: 5px;
-    padding: 0;
+    
     display: inline-flex;
     flex-wrap: wrap;
+    
 
 }
 
@@ -116,22 +112,52 @@ nav ul li.topNavButtons{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 450px;
+    width: 425px;
     max-height: fit-content;
-    margin-left: 5px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: auto;
     border-radius: 4px;
     box-shadow: 1px 1px 5px white;
     text-align: center;
 }
 
-.calendar{
-    align-content: vertical;
+.sign-in{
+    background-color: beige;
+    border-radius: 8px;
+    border: .5px solid black;
+    box-shadow:1px 1px 5px black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.events{
-    
+.sign-in h1{
+    color: black;
+}
+
+.sign-in p{
+    color: black;
+}
+
+.sign-in form ul li{
+    font-size:18px;
+    color: black;
+}
+
+.sign-in form ul li input{
+    width: 250px;
+    height: 40px;
+    margin: 5px;
+}
+
+
+#signInButton{
+    width: 200px;
+    border: 1px transparent lightseagreen;
+    background-color: lightseagreen;
+    box-shadow: 2px 1px 7px;
+    color:rgb(7, 7, 7)
+}
+.events{    
     height: 600px;
     width: 400px;
     color: black;    
@@ -168,41 +194,8 @@ table tr td{
     
 }
 
-.sign-in{
-    background-color: beige;
-    border-radius: 8px;
-    box-shadow:1px 1px 5px black;
-    margin-top: 10px;
+.commmentsBox{
     display: flex;
-    justify-content: center;
-}
-
-.sign-in h1{
-    color: black;
-}
-
-.sign-in p{
-    color: black;
-}
-
-.sign-in form ul li{
-    font-size:18px;
-    color: black;
-}
-
-.sign-in form ul li input{
-    width: 250px;
-    height: 40px;
-    margin: 5px;
-}
-
-
-#signInButton{
-    width: 200px;
-    border: 1px transparent lightseagreen;
-    background-color: lightseagreen;
-    box-shadow: 2px 1px 4px;
-    color:rgb(7, 7, 7)
 }
 
 #comment{
@@ -217,6 +210,7 @@ table tr td{
 }
 
 #socialLink{
+
     height: 50px;
     width: 50px;
     border-radius: 25%;
@@ -233,77 +227,81 @@ table tr td{
     border: 5px solid white;
     float: right;
     display: flex;
-    padding-left: 60px;
-    width: 925px;
-    height: 1400px;
     justify-content: center;
+    width: 975px;
+    height: 1600px;
+    margin: auto;
     border-radius: 4px;
-    margin-right: 10px;
-    margin-top: 21px;
-    margin-bottom: 10px;
     box-shadow: 2px 2px 4px whitesmoke;
-     
- }
-
-#highlights{
-    display: flex;
-    justify-content: center;
 }
 
-.highlightReel{
+.highlights{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 950px;
+    height: 950px;
+}
+
+.highlights img{
     width: 400px;
     height: 400px;
     box-shadow: 2px 2px 4px #777;
     margin: 25px;
     padding: auto;
     border-radius: 8px;
-
 }
 
-#recents{
+.recents{
     display: flex;
-    justify-content: center;
-    padding: auto;
+   
+    width: 950px;
+    height: 400px;
 }
+
 
 .slider{
-    width: 450px;
+    width: 400px;
     height: 300px;
-    margin: 5px;
-    overflow: hidden;
-       
+    margin: auto;    
+    box-shadow: 1px 3px 1px black;
+    border-radius: 1em;
 }
 
-.recentsSlider{
-  width: 400%;
+
+.slidePhotos img{
+  width: 400px;
   height: 300px;
+  border-radius: 1em;
+  animation-name: shutter;
+  animation-duration: 2s;
 }
 
-.slidePhotos{
-  width: 450px;
-  height: 250px;
-  display: inline-flex;
-  margin: 3px;
-  border: 2px solid black;
-  animation: slider1 2s linear infinite alternate;
+@keyframes shutter{
+    from {opacity: .5;}
+    to {opacity: 1;}
 }
 
 .galleryLink{
     position: relative;
-    width: 450px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
+    margin: auto;    
+    border-radius: 1em;
+    box-shadow: 1px 3px 1px black;
 }
 
 .galleryLinkPic{
     backface-visibility: hidden;
     transition: 0.75s ease-in;
-    width: 450px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
+    border-radius: 1em;
 }
 
 .galleryLinkOverlay{
     position: absolute;
-    padding: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -320,8 +318,7 @@ table tr td{
 
 .galleryLinkText{
     position: relative;
-    margin-top: 100px;
-    margin-left: 175px;
+    margin: auto;
     font-family: cursive;
     font-size: 3em;    
     height: 100px;
@@ -329,24 +326,6 @@ table tr td{
        
 }
  
-@keyframes slider1 {
-    
-    0%{
-        transform: translateX();
-    }
-    25%{
-        transform: translateX();
-    }
-    50%{
-        transform: translateX();
-    }
-    75%{
-        transform: translateX();
-    }
-    100%{
-        transform: translateX();
-    }
-}
 
 
 /*footer*/
