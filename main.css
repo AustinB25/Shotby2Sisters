@@ -20,12 +20,10 @@ p{
 
 }
 
-.wrapper{
-    
+.wrapper{    
     display: inline-flex;
     flex-wrap: wrap;
-    
-
+   
 }
 
 ul {
@@ -114,7 +112,8 @@ nav ul li.topNavButtons{
     justify-content: center;
     width: 425px;
     max-height: fit-content;
-    margin: auto;
+    margin-left:25px;
+    margin-top: 25px;
     border-radius: 4px;
     box-shadow: 1px 1px 5px white;
     text-align: center;
@@ -157,6 +156,7 @@ nav ul li.topNavButtons{
     box-shadow: 2px 1px 7px;
     color:rgb(7, 7, 7)
 }
+
 .events{    
     height: 600px;
     width: 400px;
@@ -205,12 +205,10 @@ table tr td{
     border: 1px inset white;
     display: inline-flex;
     justify-content: center;
-    align-content: vertical;
-   
+    align-content: vertical;   
 }
 
 #socialLink{
-
     height: 50px;
     width: 50px;
     border-radius: 25%;
@@ -221,8 +219,8 @@ table tr td{
     justify-content: center;
 }
 
-
 /*section2*/
+
  #main{
     border: 5px solid white;
     float: right;
@@ -230,16 +228,17 @@ table tr td{
     justify-content: center;
     width: 975px;
     height: 1600px;
-    margin: auto;
+    margin-top: 25px;
+    margin-right: 25px;
     border-radius: 4px;
     box-shadow: 2px 2px 4px whitesmoke;
+
 }
 
 .highlights{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;    
     width: 950px;
     height: 950px;
 }
@@ -254,8 +253,7 @@ table tr td{
 }
 
 .recents{
-    display: flex;
-   
+    display: flex;   
     width: 950px;
     height: 400px;
 }
@@ -322,13 +320,11 @@ table tr td{
     font-family: cursive;
     font-size: 3em;    
     height: 100px;
-    width: 250px;
-       
+    width: 250px;       
 }
- 
-
 
 /*footer*/
+
 #footerBreak{
     margin: 1px;
     padding: 1px;
@@ -352,4 +348,3 @@ footer ul li::before{
 footer a, :active{
     color: white;
 }
-

@@ -159,7 +159,7 @@
    
         <div id="footerBreak"></div>
         <script>
-            var slideIndex = 0;
+            var positionOne = 0;
             slider();
             
             function slider() {
@@ -170,10 +170,10 @@
                 slides[i].style.display = "none";  
               }
             
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}
+              positionOne++;
+              if (positionOne > slides.length) {positionOne = 1}
               
-              slides[slideIndex-1].style.display = "block";  
+              slides[positionOne-1].style.display = "block";  
               
               setTimeout(slider, 4500);
             }
